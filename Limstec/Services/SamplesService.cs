@@ -36,7 +36,7 @@ namespace Limstec.Services
             IEnumerable<Sample> samples;
             if (!string.IsNullOrWhiteSpace(nome))
             {
-                samples = await _context.Samples.Where(n => n.CodInterno.Contains(nome)).ToListAsync();
+                samples = await _context.Samples.Where(n => n.Cod_Interno.Contains(nome)).ToListAsync();
             }
             else
             {
